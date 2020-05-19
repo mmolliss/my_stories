@@ -1,3 +1,80 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.jumbotron {
+    background: url(https://stories-rails.herokuapp.com/assets/home-main-f39dde5d0be8697146db17314f8662f2.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+
+    .container {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        width: 800px;  
+        font-family: 'Roboto', sans-serif;  
+    }
+
+        button {
+            background-color: #2E72BD;
+            color: white;
+            width: 150px;
+            height: 60px;
+            border: none;
+            font-size: 18px;
+            margin: 40px 0;
+
+            a {
+                color: white;
+            }
+        }
+}
+
+.background-image {
+    background: url(https://stories-rails.herokuapp.com/assets/home-main-f39dde5d0be8697146db17314f8662f2.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+}
+
+.discover {
+    color: black;
+    text-align: center;
+    width: 800px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-supporting {
+    color: black;
+    text-align: center;
+    width: 800px;
+    font-family: 'Roboto', sans-serif;
+
+    .text {
+        color: black;
+        text-align: center;
+        width: 800px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+button {
+    background-color: #2E72BD;
+    color: white;
+    width: 150px;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    margin: 40px 0;
+
+    a {
+        color: white;
+    }
+}
+
+.about-supporting {
+    color: black;
+    text-align: center;
+    width: 800px;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MyStories</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Stories</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<body>
+  <a id="simple-menu" href="#sidr">Toggle menu</a>
 
-  <body>
-    <%= yield %>
+  <div id="sidr">
+    <!-- Your content -->
+    <ul>
+      <li>
+        <%= link_to "Home", home_path(@home) %>
+      </li>
+      <li class="active">
+       <%= link_to "About", about_path(@about) %>  
+      </li>
+    </ul>
+  </div>
+
+  <script>
+  $(document).ready(function() {
+    $('#simple-menu').sidr();
+  });
+  </script>
+
+  <%= yield %>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="mailto:myemailaddress@gmail.com" class="fas fa-envelope"></a>
+      <a href="https://github.com/mmolliss/my-portfolio-app" class="fab fa-github"></a>
+      <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+      <a href="https://www.facebook.com/" class="fab fa-facebook"></a>
+      <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+      <p>© 2020</p>
+    </div>
+  </footer>
+  
+  <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
   </body>
 </html>
