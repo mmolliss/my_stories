@@ -9,52 +9,72 @@
 
     .container {
         color: white;
-        text-align: center;
+        text-align: right;
         font-size: 50px;
         width: 800px;  
-        font-family: 'Roboto', sans-serif;  
+        font-family: 'Roboto', sans-serif;
+        margin-top: 100px;
+
+        h1 {
+            font-weight: 200;
+        }
     }
 
-        button {
-            background-color: #2E72BD;
-            color: white;
-            width: 150px;
-            height: 60px;
-            border: none;
-            font-size: 18px;
-            margin: 40px 0;
+    button {
+        background-color: #2E72BD;
+        color: white;
+        width: 150px;
+        height: 60px;
+        border: none;
+        font-size: 18px;
+        margin: 40px 0;
 
-            a {
-                color: white;
-            }
+        a {
+            color: white;
+            font-weight: 300;
         }
+    }
 }
 
 .background-image {
-    background: url(https://stories-rails.herokuapp.com/assets/home-main-f39dde5d0be8697146db17314f8662f2.jpg) center center;
+    background: url(https://stories-rails.herokuapp.com/assets/about-main-5d7831840429815fe86338dd0b2918a8.jpg) center center;
     background-size: cover;
     min-height: 600px;
-    width: 100%;
+    width: 100%;  
+}
+
+.container_text {
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 30px;
+    font-weight: 100;
+    position: relative;
+    top: 150px;
+    text-align: center;
+
+    h1 {
+        font-weight: 200;
+    }
 }
 
 .discover {
     color: black;
     text-align: center;
-    width: 800px;
     font-family: 'Roboto', sans-serif;
+    margin: 40px;
 }
 
 .home-supporting {
     color: black;
     text-align: center;
-    width: 800px;
     font-family: 'Roboto', sans-serif;
 
     .text {
         color: black;
         text-align: center;
-        width: 800px;
         font-family: 'Roboto', sans-serif;
+        margin: 0 0 40px 0;
     }
 }
 
@@ -75,6 +95,75 @@ button {
 .about-supporting {
     color: black;
     text-align: center;
-    width: 800px;
     font-family: 'Roboto', sans-serif;
+    margin: 40px 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.contact_page {
+
+    .contact_image {
+        background: url(https://stories-rails.herokuapp.com/assets/contact-main-9fb04617516938f849971735fed62270.jpg) center center;;
+        background-size: cover;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .sign_up {
+        color: white;
+        text-align: right;
+        font-size: 50px;
+        width: 800px;  
+        font-family: 'Roboto', sans-serif;
+        margin: 100px 0 0 0;
+        font-weight: 100;
+    }
+
+    .form_group {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        font-weight: 500;
+    }
+
+    .join_button {
+        background-color: rgb(207, 205, 205);
+        color: black;
+        width: 150px;
+        height: 60px;
+        border: none;
+        font-size: 18px;
+
+        input {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    button {
+        background-color: rgb(207, 205, 205);
+        color: black;
+    }
+}
+
+.container-thanks {
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 30px;
+    font-weight: 100;
+    position: relative;
+    top: 150px;
+    text-align: center;
+
+    h1 {
+        font-weight: 200;
+    }
 }

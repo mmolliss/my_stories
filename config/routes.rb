@@ -6,5 +6,13 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'thanks' => 'pages#thanks'
   get 'home' => 'pages#home'
+  get 'contact' => 'pages#contact'
+
+  get '/signups' => 'signups#index'
+  post '/signups' => 'signups#create'
+  get '/signups/new' => 'signups#new'
+  post '/contact' => 'pages#thanks'
+
+  resources :signups
 
 end

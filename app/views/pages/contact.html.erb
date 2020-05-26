@@ -1,0 +1,22 @@
+<header class="contact_page">
+    <div class="contact_image">
+        <h1 class="sign_up">Get the latest updates from Stories!</h1>
+        <div class="col-md-4"> 
+            <%= form_with scope: :signup, local: true do |form| %>
+                <div class="form_group">
+                    <%= form.label :first_name, 'First name' %>
+                    <%= form.text_field :first_name %>
+                </div>
+
+                <div class="form_group">
+                    <%= form.label :email, 'Email' %>
+                    <%= form.text_field :email %>
+                </div>
+            
+                <div class="join_button">
+                    <%= form.submit 'Join!' %>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</header>
